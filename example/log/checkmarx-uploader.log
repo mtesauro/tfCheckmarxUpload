@@ -1,0 +1,10 @@
+INFO:    2015/04/28 18:11:47 Starting up checkmarx-uploader version 1.3
+INFO:    2015/04/28 18:11:47 Opening uploads directory of checkmarx
+INFO:    2015/04/28 18:11:47 Reading upload files from checkmarx
+INFO:    2015/04/28 18:11:47 Uploading 17 [Example App].Example App-6.4.2015-17.3.46.xml
+INFO:    2015/04/28 18:11:53 Successful upload of 17 [Example App].Example App-6.4.2015-17.3.46.xml to ThreadFix AppID 17
+INFO:    2015/04/28 18:11:53 Uploading 1717171717 [Bad Filename].Bad Filename-6.4.2015-17.3.46.xml
+ERROR:   2015/04/28 18:11:54 checkmarx-uploader.go:286: Error uploading 1717171717 [Bad Filename].Bad Filename-6.4.2015-17.3.46.xml.  Error was: An error occurred during JSON parsing. The error was:   Error parsing Upload response JSON.  Error was: invalid character '<' looking for beginning of value
+ERROR:   2015/04/28 18:11:54 checkmarx-uploader.go:289: Parse error for 1717171717 [Bad Filename].Bad Filename-6.4.2015-17.3.46.xml
+INFO:    2015/04/28 18:11:54 Problem file moved to checkmarx/parse-errors/1717171717 [Bad Filename].Bad Filename-6.4.2015-17.3.46.xml
+INFO:    2015/04/28 18:11:54 Deleting file 17 [Example App].Example App-6.4.2015-17.3.46.xml after uploading to ThreadFix AppID 17
