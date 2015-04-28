@@ -47,3 +47,15 @@ After a run of tfCheckmarx-uploader, you will have:
 
 This allows you to run tfCheckmarx-uploader every N minutes without any human interaction.  Occasinally, parse-errors should be checked for problem files but otherwise it should be completely hands off after you setup a scheduled task/cron job.
 
+If you should happen to run tfCheckmarx-uploader without creating a config file, one will be created for you like:
+
+```
+$ ./tfCheckmarxUpload 
+=====[ Default config file created ]=====
+
+A default configuration file for checkmarx-uploader has been created 
+in the current working directory named 'checkmarx-uploader.config'.  Please edit the default
+values before running this program again.
+Cheers!
+=====[ Default config file created ]=====
+```
