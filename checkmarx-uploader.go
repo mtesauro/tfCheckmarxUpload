@@ -142,9 +142,10 @@ func getAppId(f os.FileInfo) (int, error) {
 
 	appId, err := strconv.Atoi(f.Name()[0:(i)])
 	if err != nil {
-		Error.Printf("Error converting App ID to a int: The error was: \"%v\"", err)
-		fmt.Printf("\nError converting App ID to a int\n - The error was: \"%v\"\n\n", err)
-		os.Exit(1)
+		// File name with correct format but not an int at the start
+		msg := fmt.Sprintf("Error converting App ID to a int: \"%v\"", err)
+		Error.Printf(msg)
+		return 0, errors.New(msg)
 	}
 
 	return appId, nil
